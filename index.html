@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>iphone 12 raw</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .main {
+                width: 100%;
+                height: 120vh;
+
+                position: relative;
+                display: flex;
+            }
+
+            .white {
+                width: 100%;
+                height: 40vh;
+                background-color: rgb(255, 255, 255);
+                position: absolute;
+                border-bottom-right-radius: 100px;
+            }
+
+            .green {
+                bottom: 0;
+                width: 100%;
+                height: 80vh;
+                background-color: #e42e23;
+                position: absolute;
+                border-top-left-radius: 100px;
+            }
+
+            .right {
+                background-color: #e42e23;
+                width: 50%;
+            }
+
+            .left {
+                background-color: rgb(255, 255, 255);
+                width: 50%;
+            }
+
+            .back {
+                width: 2rem;
+                height: 2rem;
+                background-color: #e42e23;
+                border-radius: 50%;
+                margin-left: 1rem;
+                margin-top: 1.5rem;
+                box-shadow: 2px 2px 3px 0.5px #888888;
+            }
+
+            .backImg {
+                width: 1rem;
+                height: 1.2rem;
+                padding-left: 0.4rem;
+                padding-top: 0.39rem;
+            }
+
+            .foodItem {
+                width: 14rem;
+                height: 14rem;
+                margin: 3rem;
+                margin-top: 4rem;
+                position: absolute;
+                animation: myfirst;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+            }
+
+            @keyframes myfirst {
+                0% {
+                    top: 3px;
+                }
+
+                10% {
+                    top: 5px;
+                }
+
+                20% {
+                    top: 10px;
+                }
+
+                30% {
+                    top: 15px;
+                }
+
+                40% {
+                    top: 20px;
+                }
+
+                50% {
+                    top: 25px;
+                }
+
+                60% {
+                    top: 20px;
+                }
+
+                70% {
+                    top: 15px;
+                }
+
+                80% {
+                    top: 10px;
+                }
+
+                90% {
+                    top: 5px;
+                }
+
+                100% {
+                    top: 3px;
+                }
+            }
+
+            .foodName {
+                font-family: monospace;
+                font-size: 1.7rem;
+                text-align: center;
+                padding-top: 2rem;
+                font-weight: 800;
+                color: #ffffff;
+            }
+
+            .commonText {
+                font-size: 1rem;
+                font-family: monospace;
+                text-align: center;
+                font-weight: 800;
+                color: #ffffff;
+            }
+
+            .price {
+                font-size: 2.5rem;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                font-weight: 800;
+                color: #61ff4c;
+                font-weight: bold;
+            }
+
+            /* ////////////////////////last style ///////////// */
+            form {
+              
+             
+                text-align: center;
+                padding-top: 2rem;
+              
+            }
+            .text-nfi{
+                font-weight: 600;
+                      }
+
+            .value-button {
+                display: inline-block;
+                border: 1px solid #f58c0a;
+                margin: 0px;
+                width: 3rem;
+                height: 3rem;
+                text-align: center;
+             margin-top: 1rem;
+               font-weight: bold;
+               color:#000000;
+                font-size: 2.3rem;
+                margin-left: 0.6rem;
+                margin-right: 0.6rem;
+                background:#f58c0a;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                border-radius: 50px;
+            }
+            .value-button:hover{
+
+
+               animation-name: buttonAni;  
+                animation-duration: 3s;
+                animation-iteration-count: initial;
+                animation-timing-function: ease-in;
+              
+                
+            }
+            @keyframes buttonAni {
+                0% {
+                    background-color: rgb(88, 255, 10);
+                }
+
+                100% {
+                    background-color: rgb(10, 255, 10);
+                }
+            }
+            .value-button:hover {
+                cursor: pointer;
+            }
+
+            input#number {
+                text-align: center;
+                border-radius: 30px;
+                border: none;
+                font-size: 2rem;
+                font-family: Courier, monospace;
+                font-style: normal;
+                font-weight: bold;
+                border-top: 1px solid #ddd;
+                background-color: #f58c0a;
+                color:#000000 ;
+                margin: 0px;
+                width: 6rem;
+                height: 3rem;
+                pointer-events: none;
+            }
+
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            .mobileShow{
+                background-color: rgb(255, 255, 255);
+                width: 13rem;
+                height: 3.5rem;
+                font-size: 2.5rem;
+                font-family: sans-serif;
+                color: #e42e23;
+                border-radius: 30px;
+                font-weight: bolder;
+                margin-left: 5rem;
+                margin-right: 5rem;
+                margin-top: 2rem;
+                border-color: rgb(0, 0, 0);
+
+            }
+            
+            .mobileShow:hover{
+                background-color: #35ad06;  
+                color: #ffffff;
+                
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="white">
+                <div class="back">
+                    <img class="backImg" src="./back.png" alt="back" /> <img class="foodItem" src="./burger.png" alt="" />
+                </div>
+            </div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="green">
+                <p class="foodName">Burger Mania</p>
+                <br/>
+                <p class="commonText">
+                    A  burger contains
+                    <span style="color: yellow; font-size: 1.2rem; font-family: 'Courier New', Courier, monospace"
+                        >500 ⚡</span
+                    >calories
+                </p>
+                <p class="commonText">Is it <span style="color: rgb(50, 255, 50)">OK</span> to eat a burger once a week</p>
+                <p class="commonText">
+                    Every bite is crunchy <br />
+                    Chicken burger<span style="color: rgb(134, 227, 250)"> vibes...</span>
+                </p>
+                <br><br> <br>
+
+                <h1 id="show" class="price">100 rs</h1>
+                <script>
+                    function display() {
+                        var text = document.getElementById("number").value;
+                        var mathend = text * 100 + " rs";
+
+                        document.getElementById("show").innerHTML = mathend;
+
+                        // addding a alert
+
+                        if (text == "cross") {
+                            alert("fbrhgfbrhbfer");
+                        }
+                    }
+                </script>
+
+                <form>
+                    <p class="text-nfi"> no of items needed</p>
+                    <div class="value-button" id="decrease" onclick="decreaseValue(); display()" value="Decrease Value">
+                        <img src="./reset.png" alt="reset" style="width: 1.6rem; height: 1.5rem;">
+                    </div>
+                    <input type="number" name="message" id="number" value="1" />
+                    <div class="value-button" id="increase" onclick="increaseValue(); display()" value="Increase Value">
+                        +
+                    </div>
+                </form>
+
+                <script>
+                    function increaseValue() {
+                        var value = parseInt(document.getElementById("number").value, 10);
+                        value = isNaN(value) ? 1 : value;
+                        value++;
+                        document.getElementById("number").value = value;
+                    }
+
+                    function decreaseValue() {
+                        var value = parseInt(document.getElementById("number").value, 10);
+                        value = isNaN(value) ? 1 : value;
+                        value < 1 ? (value = 1) : "1";
+
+                        value = 1;
+                        document.getElementById("number").value = value;
+                    }
+                </script>
+
+                <button onclick="share()" class="mobileShow" >
+                 Order
+                </button>
+
+              <hr style="height: 5px; margin-top: 3rem; background-color: black;">
+                 
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+                <script>
+                    // User-defined function to share some message on WhatsApp
+                    function share() {
+                        var tickaprice = 100;
+
+                        // collet the user input
+                        var message = $("input[name=message]").val();
+
+                        var price = message * tickaprice;
+                        var final =
+                            "https://wa.me/+918943793274?text=🟢%20_*you%20ordered%20!*_%20%0D%0A_*🍔%20%20berger%20mania%20%20😋*_" +
+                            "%0D%0A_*no%20of%20item%20%20:*_%20%20" +
+                            message +
+                            "%0D%0A" +
+                            "_*price%20now%20%20:*_%20" +
+                            price +
+                            "%20_*rs*_%20";
+
+                        // JavaScript function to open URL in new window
+                        window.open(final);
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
